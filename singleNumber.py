@@ -17,3 +17,9 @@ class Solution:
         for i in nums:
             res ^= i
         return res
+    
+        """
+        2*sum(set()) assumes all are duplicates, then subtracting sum of the list leaves only the non-duplicated integer
+        res = 2*sum(set(nums))-sum(nums)
+        return res
+        """
